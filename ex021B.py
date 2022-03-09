@@ -1,0 +1,10 @@
+import playsound
+playsound.playsound('minhamorada.mp3')
+playsound.playsound('libertamedemim.mp3')
+playsound.playsound('DeuseDeus.mp3')
+playsound.playsound('tuagraçamebasta.mp3')
+playsound.playsound('paidemultidoes.mp3')
+playsound.playsound('Galileu.mp3')
+playsound.playsound('yeshua.mp3')
+playsound.playsound('Oceanos.mp3')
+playsound.playsound('Atos2.mp3')

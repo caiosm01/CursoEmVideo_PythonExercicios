@@ -1,0 +1,5 @@
+preço=float(input('Informe o preço do produto: R$'))
+des=preço-(preço*0.1)
+aumento=preço+(preço*0.1)
+print('Se o pagamento do produto for avista, haverá um desconto de 10%, e o produto que antes valia R${:.2f}, passará a valer R${:.2f}.'.format(preço,des))
+print('Se o pagamento do produto for parcelado, haverá um aumento de 10% do preço total. Logo, o produto que valia R${:.2f}, passará a valer R${:.2f}.'.format(preço, aumento))

@@ -1,0 +1,18 @@
+tabela = ('Flamengo', 'Santos', 'Palmeiras', 'Grêmio', 'Athletico-PR', 'São Paulo', 'Internacional', 'Corinthians', 'Fortaleza', 'Goiás', 'Bahia', 'Vasco', 'Atlético-MG', 'Fluminense', 'Botafogo', 'Ceará', 'Cruzeiro', 'CSA', 'Chapecoense', 'Avaí')
+print('-='*20)
+print('TABELA BRASILEIRÃO 2019')
+print('-='*20)
+for c in range(0, len(tabela)):
+    print(f'{c+1}°-{tabela[c]}')
+print('-='*20)
+print(f'OS 5 PRIMEIROS: {tabela[:5]}')
+print('-='*20)
+print(f'OS 4 ÚLTIMOS: {tabela[-4:]}')
+print('-='*20)
+print('TIMES EM ORDEM ALFABÉTICA:')
+for c in range(0, len(tabela)):
+    print(f'{sorted(tabela)[c]}')
+#print(f'TIMES EM ORDEM ALFABÉTICA: {sorted(tabela)}')
+print('-='*20)
+print(f'A Chapecoense está na {tabela.index("Chapecoense")+1}° posição.')
+print('-='*20)

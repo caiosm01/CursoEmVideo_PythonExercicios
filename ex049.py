@@ -1,0 +1,22 @@
+from emoji import emojize
+from random import randint
+o=randint(31, 37); p=randint(31, 37); q=randint(31, 37); r=randint(31, 37)
+print(emojize('\033[{}m:six_pointed_star:'.format(o)*5, use_aliases=True))
+print(emojize('\033[{}m:six_pointed_star:\033[{}mTABUADA \033[{}m:six_pointed_star:'.format(o, p, o), use_aliases=True))
+print(emojize('\033[{}m:six_pointed_star:'.format(o)*5, use_aliases=True))
+n=int(input('\033[{}mInforme um número inteiro para ver sua tabuada:'.format(p)))
+for c in range(1, 11):
+    print(emojize('\033[{}m:heavy_minus_sign:\033[{}m'.format(q, r)* 9, use_aliases=True))
+    print(emojize('{:<3}:heavy_multiplication_x:{:>3}={:>3}', use_aliases=True).format(n, c, n*c)
+      .replace('0', emojize(':zero:', use_aliases=True))
+      .replace('1',  emojize(':one:', use_aliases=True))
+      .replace('2',  emojize(':two:', use_aliases=True))
+      .replace('3', emojize(':three:', use_aliases=True))
+      .replace('4', emojize(':four:', use_aliases=True))
+      .replace('5', emojize(':five:', use_aliases=True))
+      .replace('6', emojize(':six:', use_aliases=True))
+      .replace('7', emojize(':seven:', use_aliases=True))
+      .replace('8', emojize(':eight:', use_aliases=True))
+      .replace('9', emojize(':nine:', use_aliases=True)))
+print(emojize('\033[{}m:heavy_minus_sign:'.format(q) * 9, use_aliases=True))
+print('\033[{}mFIM'.format(p))
